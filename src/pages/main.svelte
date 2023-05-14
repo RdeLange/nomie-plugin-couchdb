@@ -15,7 +15,7 @@
     export let emailaddress;
 
     var email = emailaddress;
-    var couchdbserviceurl = "https://nr.casadelange.nl";
+    var couchdbserviceurl = "https://couchdbadmin.dailynomie.com";
 
    let open=true;
    

@@ -20,15 +20,15 @@
   import Sun from "carbon-icons-svelte/lib/Sun.svelte";
   import Information from "carbon-icons-svelte/lib/Information.svelte";
 
-  const pluginname = "Plugin CouchDB";
-  const pluginemoji = "🛋️";
+  const pluginname = "Plugin Sync";
+  const pluginemoji = "🔄";
   var emailaddress = "";
   
   const plugin = new NomiePlugin({
         name: pluginname,
         emoji: pluginemoji,
-        description: "CouchDB Sync Service",
-        uses: ["createNote", "onLaunch", "getLocation"],
+        description: "Nomie Sync Service",
+        uses: [],
         version: "1.0",
         addToCaptureMenu: true,
         addToMoreMenu: true,

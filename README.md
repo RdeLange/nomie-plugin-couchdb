@@ -26,20 +26,19 @@ The 🔄Nomie Sync Plugin can be installed in Nomie via the following steps:
 
 After launching the plugin, you will be presented with the main screen. This screen will simply enable you to register or un-register with the sync service.
 
-
-![](assets/20230518_221907_image.png)
+![](assets/20230519_200732_image.png)
 
 ### Register
 
-In order to register, please make sure to provide a valid email address and click on the Register button. You will be presented with a confirmation if the registration was successfull. The details of your subscription are send to your email address.
+In order to register, please make sure to provide a valid email address and click on the ✅Opt-In button. You will be presented with a confirmation if the registration was successfull. The details of your subscription are send to your email address.
 
 ### Un-Register
 
-By clicking on the Un-Register button your subscription will be cancelled. Make sure to provide the email address which you used to subscribe.
+By clicking on the ❎Opt-Out button your subscription will be cancelled. Make sure to provide the email address which you used to subscribe.
 
 ### Forgot credentials
 
-In case you forgot your credentials, please first Un-Register with the email address you used when you subscribed. Once successfull you can Register again.
+In case you forgot your credentials, please first ❎Opt-Out with the email address you used when you subscribed. Once successfull you can ✅Opt-In again.
 
 ### Usage in Nomie
 
@@ -51,7 +50,6 @@ Once you have registered, you will receive the following information per email (
 - Password
 
 Open Nomie and go to the 'More' option in the menu/ Navigation Bar. Under My Data you will find the storage option. If you did not yet 'activate' the CouchDB Option, please do so after which you will see a screen like below screenshot:
-
 
 ![](assets/20230518_223849_image.png)
 

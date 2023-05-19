@@ -11148,13 +11148,13 @@ var app = (function () {
     			hr0 = element("hr");
     			t6 = space();
     			h51 = element("h5");
-    			h51.textContent = "This Plugin will let you Register for the free DailyNomie Sync Service which let's you sync your Nomie data to multiple devices. It's usage is very simple: provide your email address and click on the Register button. You will receive your credentials in your email.";
+    			h51.textContent = "This Plugin will let you register for the free DailyNomie Sync Service which let's you sync your Nomie data to multiple devices. It's usage is very simple: provide your email address and click on the Opt-In button. You will receive your credentials in your email.";
     			t8 = space();
     			h52 = element("h5");
-    			h52.textContent = "In case you would like to Un-Register, please use the Un-Register button.";
+    			h52.textContent = "In case you would like to unregister, please use the Opt-Out button.";
     			t10 = space();
     			h53 = element("h5");
-    			h53.textContent = "In case you forgot your credentials, please first Un-Register. Then Register again.";
+    			h53.textContent = "In case you forgot your credentials, please first unregister, then register again.";
     			t12 = space();
     			h54 = element("h5");
     			h54.textContent = "I am providing this service on best effort because I would like many people to be able to enjoy Nomie. After 30 days of inactivity I will delete your account. Be patience with me in case of errors or bugs🥴";
@@ -11171,12 +11171,12 @@ var app = (function () {
     			set_style(h51, "text-align", "center");
     			add_location(h51, file$6, 75, 10, 1717);
     			set_style(h52, "text-align", "center");
-    			add_location(h52, file$6, 76, 10, 2028);
+    			add_location(h52, file$6, 76, 10, 2026);
     			set_style(h53, "text-align", "center");
-    			add_location(h53, file$6, 77, 10, 2147);
+    			add_location(h53, file$6, 77, 10, 2140);
     			set_style(h54, "text-align", "center");
-    			add_location(h54, file$6, 78, 10, 2276);
-    			add_location(hr1, file$6, 79, 10, 2528);
+    			add_location(h54, file$6, 78, 10, 2268);
+    			add_location(hr1, file$6, 79, 10, 2520);
     		},
     		m: function mount(target, anchor) {
     			insert_dev(target, h1, anchor);
@@ -11327,9 +11327,9 @@ var app = (function () {
     			create_component(textinput.$$.fragment);
     			t1 = space();
     			br1 = element("br");
-    			add_location(br0, file$6, 84, 10, 2603);
-    			add_location(span, file$6, 85, 10, 2618);
-    			add_location(br1, file$6, 86, 10, 2743);
+    			add_location(br0, file$6, 84, 10, 2595);
+    			add_location(span, file$6, 85, 10, 2610);
+    			add_location(br1, file$6, 86, 10, 2735);
     		},
     		m: function mount(target, anchor) {
     			insert_dev(target, br0, anchor);
@@ -11442,7 +11442,7 @@ var app = (function () {
 
     	const block = {
     		c: function create() {
-    			t = text("Register");
+    			t = text("✅Opt-In");
     		},
     		m: function mount(target, anchor) {
     			insert_dev(target, t, anchor);
@@ -11492,9 +11492,9 @@ var app = (function () {
     			create_component(button.$$.fragment);
     			t1 = space();
     			br1 = element("br");
-    			add_location(br0, file$6, 91, 12, 2824);
-    			add_location(span, file$6, 92, 13, 2842);
-    			add_location(br1, file$6, 93, 13, 2947);
+    			add_location(br0, file$6, 91, 12, 2816);
+    			add_location(span, file$6, 92, 13, 2834);
+    			add_location(br1, file$6, 93, 13, 2938);
     		},
     		m: function mount(target, anchor) {
     			insert_dev(target, br0, anchor);
@@ -11550,7 +11550,7 @@ var app = (function () {
 
     	const block = {
     		c: function create() {
-    			t = text("Un-Register");
+    			t = text("❎Opt-Out");
     		},
     		m: function mount(target, anchor) {
     			insert_dev(target, t, anchor);
@@ -11600,9 +11600,9 @@ var app = (function () {
     			create_component(button.$$.fragment);
     			t1 = space();
     			br1 = element("br");
-    			add_location(br0, file$6, 96, 10, 2995);
-    			add_location(span, file$6, 97, 11, 3011);
-    			add_location(br1, file$6, 98, 11, 3118);
+    			add_location(br0, file$6, 96, 10, 2986);
+    			add_location(span, file$6, 97, 11, 3002);
+    			add_location(br1, file$6, 98, 11, 3106);
     		},
     		m: function mount(target, anchor) {
     			insert_dev(target, br0, anchor);

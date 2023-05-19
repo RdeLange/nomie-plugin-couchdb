@@ -11161,22 +11161,22 @@ var app = (function () {
     			t14 = space();
     			hr1 = element("hr");
     			set_style(h1, "text-align", "center");
-    			add_location(h1, file$6, 71, 10, 1521);
+    			add_location(h1, file$6, 71, 10, 1518);
     			set_style(h2, "text-align", "center");
     			attr_dev(h2, "class", "svelte-8ggwz8");
-    			add_location(h2, file$6, 72, 10, 1580);
+    			add_location(h2, file$6, 72, 10, 1577);
     			set_style(h50, "text-align", "center");
-    			add_location(h50, file$6, 73, 10, 1638);
-    			add_location(hr0, file$6, 74, 10, 1702);
+    			add_location(h50, file$6, 73, 10, 1635);
+    			add_location(hr0, file$6, 74, 10, 1699);
     			set_style(h51, "text-align", "center");
-    			add_location(h51, file$6, 75, 10, 1717);
+    			add_location(h51, file$6, 75, 10, 1714);
     			set_style(h52, "text-align", "center");
-    			add_location(h52, file$6, 76, 10, 2026);
+    			add_location(h52, file$6, 76, 10, 2023);
     			set_style(h53, "text-align", "center");
-    			add_location(h53, file$6, 77, 10, 2140);
+    			add_location(h53, file$6, 77, 10, 2137);
     			set_style(h54, "text-align", "center");
-    			add_location(h54, file$6, 78, 10, 2268);
-    			add_location(hr1, file$6, 79, 10, 2520);
+    			add_location(h54, file$6, 78, 10, 2265);
+    			add_location(hr1, file$6, 79, 10, 2517);
     		},
     		m: function mount(target, anchor) {
     			insert_dev(target, h1, anchor);
@@ -11327,9 +11327,9 @@ var app = (function () {
     			create_component(textinput.$$.fragment);
     			t1 = space();
     			br1 = element("br");
-    			add_location(br0, file$6, 84, 10, 2595);
-    			add_location(span, file$6, 85, 10, 2610);
-    			add_location(br1, file$6, 86, 10, 2735);
+    			add_location(br0, file$6, 84, 10, 2592);
+    			add_location(span, file$6, 85, 10, 2607);
+    			add_location(br1, file$6, 86, 10, 2732);
     		},
     		m: function mount(target, anchor) {
     			insert_dev(target, br0, anchor);
@@ -11436,13 +11436,13 @@ var app = (function () {
     	return block;
     }
 
-    // (93:19) <Button on:click={register} style="float: right; width: 99%">
+    // (93:19) <Button on:click={register} style="float: right; width: 120%">
     function create_default_slot_6$1(ctx) {
     	let t;
 
     	const block = {
     		c: function create() {
-    			t = text("✅Opt-In");
+    			t = text("✅ Opt In");
     		},
     		m: function mount(target, anchor) {
     			insert_dev(target, t, anchor);
@@ -11456,7 +11456,7 @@ var app = (function () {
     		block,
     		id: create_default_slot_6$1.name,
     		type: "slot",
-    		source: "(93:19) <Button on:click={register} style=\\\"float: right; width: 99%\\\">",
+    		source: "(93:19) <Button on:click={register} style=\\\"float: right; width: 120%\\\">",
     		ctx
     	});
 
@@ -11475,7 +11475,7 @@ var app = (function () {
 
     	button = new Button({
     			props: {
-    				style: "float: right; width: 99%",
+    				style: "float: right; width: 120%",
     				$$slots: { default: [create_default_slot_6$1] },
     				$$scope: { ctx }
     			},
@@ -11492,9 +11492,9 @@ var app = (function () {
     			create_component(button.$$.fragment);
     			t1 = space();
     			br1 = element("br");
-    			add_location(br0, file$6, 91, 12, 2816);
-    			add_location(span, file$6, 92, 13, 2834);
-    			add_location(br1, file$6, 93, 13, 2938);
+    			add_location(br0, file$6, 91, 12, 2813);
+    			add_location(span, file$6, 92, 13, 2831);
+    			add_location(br1, file$6, 93, 13, 2937);
     		},
     		m: function mount(target, anchor) {
     			insert_dev(target, br0, anchor);
@@ -11544,13 +11544,13 @@ var app = (function () {
     	return block;
     }
 
-    // (98:17) <Button on:click={unregister} style="float: left; width: 99%">
+    // (98:17) <Button on:click={unregister} style="float: left; width: 120%">
     function create_default_slot_4$2(ctx) {
     	let t;
 
     	const block = {
     		c: function create() {
-    			t = text("❎Opt-Out");
+    			t = text("❎ Opt Out");
     		},
     		m: function mount(target, anchor) {
     			insert_dev(target, t, anchor);
@@ -11564,7 +11564,7 @@ var app = (function () {
     		block,
     		id: create_default_slot_4$2.name,
     		type: "slot",
-    		source: "(98:17) <Button on:click={unregister} style=\\\"float: left; width: 99%\\\">",
+    		source: "(98:17) <Button on:click={unregister} style=\\\"float: left; width: 120%\\\">",
     		ctx
     	});
 
@@ -11583,7 +11583,7 @@ var app = (function () {
 
     	button = new Button({
     			props: {
-    				style: "float: left; width: 99%",
+    				style: "float: left; width: 120%",
     				$$slots: { default: [create_default_slot_4$2] },
     				$$scope: { ctx }
     			},
@@ -11600,9 +11600,9 @@ var app = (function () {
     			create_component(button.$$.fragment);
     			t1 = space();
     			br1 = element("br");
-    			add_location(br0, file$6, 96, 10, 2986);
-    			add_location(span, file$6, 97, 11, 3002);
-    			add_location(br1, file$6, 98, 11, 3106);
+    			add_location(br0, file$6, 96, 10, 2985);
+    			add_location(span, file$6, 97, 11, 3001);
+    			add_location(br1, file$6, 98, 11, 3107);
     		},
     		m: function mount(target, anchor) {
     			insert_dev(target, br0, anchor);

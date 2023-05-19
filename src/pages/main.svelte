@@ -8,7 +8,7 @@
         Column,
         TextInput,
     } from "carbon-components-svelte";
-   
+
     export let pluginname;
     export let pluginemoji;
     export let plugin;
@@ -90,12 +90,12 @@
         <Row>
         <Column>
             <br>
-             <span><Button on:click={register} style="float: right; width: 99%">✅Opt-In</Button></span>
+             <span><Button on:click={register} style="float: right; width: 120%">✅ Opt In</Button></span>
              <br>
         </Column>
       <Column>
           <br>
-           <span><Button on:click={unregister} style="float: left; width: 99%">❎Opt-Out</Button></span>
+           <span><Button on:click={unregister} style="float: left; width: 120%">❎ Opt Out</Button></span>
            <br>
       </Column>
   </Row>

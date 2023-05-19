@@ -73,8 +73,8 @@
           <h2 style="text-align:center">{pluginname}</h2>
           <h5 style="text-align:center">Loaded Succesfully</h5>
           <hr>
-          <h5 style="text-align:center">This Plugin will let you Register for the free DailyNomie Sync Service which let's you sync your Nomie data to multiple devices. It's usage is very simple: provide your email address and click on the Register button. You will receive your credentials in your email.</h5>
-          <h5 style="text-align:center">In case you would like to Un-Register, please use the Un-Register button.</h5>
+          <h5 style="text-align:center">This Plugin will let you Register for the free DailyNomie Sync Service which let's you sync your Nomie data to multiple devices. It's usage is very simple: provide your email address and click on the Opt-In button. You will receive your credentials in your email.</h5>
+          <h5 style="text-align:center">In case you would like to Un-Register, please use the Opt-Out button.</h5>
           <h5 style="text-align:center">In case you forgot your credentials, please first Un-Register. Then Register again.</h5>
           <h5 style="text-align:center">I am providing this service on best effort because I would like many people to be able to enjoy Nomie. After 30 days of inactivity I will delete your account. Be patience with me in case of errors or bugs🥴</h5>
           <hr>

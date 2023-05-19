@@ -11120,17 +11120,17 @@ var app = (function () {
     	let h2;
     	let t2;
     	let t3;
-    	let h50;
+    	let h5;
     	let t5;
     	let hr0;
     	let t6;
-    	let h51;
+    	let h60;
     	let t8;
-    	let h52;
+    	let h61;
     	let t10;
-    	let h53;
+    	let h62;
     	let t12;
-    	let h54;
+    	let h63;
     	let t14;
     	let hr1;
 
@@ -11142,22 +11142,22 @@ var app = (function () {
     			h2 = element("h2");
     			t2 = text(/*pluginname*/ ctx[0]);
     			t3 = space();
-    			h50 = element("h5");
-    			h50.textContent = "Loaded Succesfully";
+    			h5 = element("h5");
+    			h5.textContent = "Loaded Succesfully";
     			t5 = space();
     			hr0 = element("hr");
     			t6 = space();
-    			h51 = element("h5");
-    			h51.textContent = "This Plugin will let you register for the free DailyNomie Sync Service which let's you sync your Nomie data to multiple devices. It's usage is very simple: provide your email address and click on the Opt-In button. You will receive your credentials in your email.";
+    			h60 = element("h6");
+    			h60.textContent = "This Plugin will let you register for the free DailyNomie Sync Service which let's you sync your Nomie data to multiple devices. It's usage is very simple: provide your email address and click on the Opt-In button. You will receive your credentials in your email.";
     			t8 = space();
-    			h52 = element("h5");
-    			h52.textContent = "In case you would like to unregister, please use the Opt-Out button.";
+    			h61 = element("h6");
+    			h61.textContent = "In case you would like to unregister, please use the Opt-Out button.";
     			t10 = space();
-    			h53 = element("h5");
-    			h53.textContent = "In case you forgot your credentials, please first unregister, then register again.";
+    			h62 = element("h6");
+    			h62.textContent = "In case you forgot your credentials, please first unregister, then register again.";
     			t12 = space();
-    			h54 = element("h5");
-    			h54.textContent = "I am providing this service on best effort because I would like many people to be able to enjoy Nomie. After 30 days of inactivity I will delete your account. Be patience with me in case of errors or bugs🥴";
+    			h63 = element("h6");
+    			h63.textContent = "I am providing this service on best effort because I would like many people to be able to enjoy Nomie. After 30 days of inactivity I will delete your account. Be patience with me in case of errors or bugs🥴";
     			t14 = space();
     			hr1 = element("hr");
     			set_style(h1, "text-align", "center");
@@ -11165,17 +11165,17 @@ var app = (function () {
     			set_style(h2, "text-align", "center");
     			attr_dev(h2, "class", "svelte-8ggwz8");
     			add_location(h2, file$6, 72, 10, 1577);
-    			set_style(h50, "text-align", "center");
-    			add_location(h50, file$6, 73, 10, 1635);
+    			set_style(h5, "text-align", "center");
+    			add_location(h5, file$6, 73, 10, 1635);
     			add_location(hr0, file$6, 74, 10, 1699);
-    			set_style(h51, "text-align", "center");
-    			add_location(h51, file$6, 75, 10, 1714);
-    			set_style(h52, "text-align", "center");
-    			add_location(h52, file$6, 76, 10, 2023);
-    			set_style(h53, "text-align", "center");
-    			add_location(h53, file$6, 77, 10, 2137);
-    			set_style(h54, "text-align", "center");
-    			add_location(h54, file$6, 78, 10, 2265);
+    			set_style(h60, "text-align", "center");
+    			add_location(h60, file$6, 75, 10, 1714);
+    			set_style(h61, "text-align", "center");
+    			add_location(h61, file$6, 76, 10, 2023);
+    			set_style(h62, "text-align", "center");
+    			add_location(h62, file$6, 77, 10, 2137);
+    			set_style(h63, "text-align", "center");
+    			add_location(h63, file$6, 78, 10, 2265);
     			add_location(hr1, file$6, 79, 10, 2517);
     		},
     		m: function mount(target, anchor) {
@@ -11185,17 +11185,17 @@ var app = (function () {
     			insert_dev(target, h2, anchor);
     			append_dev(h2, t2);
     			insert_dev(target, t3, anchor);
-    			insert_dev(target, h50, anchor);
+    			insert_dev(target, h5, anchor);
     			insert_dev(target, t5, anchor);
     			insert_dev(target, hr0, anchor);
     			insert_dev(target, t6, anchor);
-    			insert_dev(target, h51, anchor);
+    			insert_dev(target, h60, anchor);
     			insert_dev(target, t8, anchor);
-    			insert_dev(target, h52, anchor);
+    			insert_dev(target, h61, anchor);
     			insert_dev(target, t10, anchor);
-    			insert_dev(target, h53, anchor);
+    			insert_dev(target, h62, anchor);
     			insert_dev(target, t12, anchor);
-    			insert_dev(target, h54, anchor);
+    			insert_dev(target, h63, anchor);
     			insert_dev(target, t14, anchor);
     			insert_dev(target, hr1, anchor);
     		},
@@ -11208,17 +11208,17 @@ var app = (function () {
     			if (detaching) detach_dev(t1);
     			if (detaching) detach_dev(h2);
     			if (detaching) detach_dev(t3);
-    			if (detaching) detach_dev(h50);
+    			if (detaching) detach_dev(h5);
     			if (detaching) detach_dev(t5);
     			if (detaching) detach_dev(hr0);
     			if (detaching) detach_dev(t6);
-    			if (detaching) detach_dev(h51);
+    			if (detaching) detach_dev(h60);
     			if (detaching) detach_dev(t8);
-    			if (detaching) detach_dev(h52);
+    			if (detaching) detach_dev(h61);
     			if (detaching) detach_dev(t10);
-    			if (detaching) detach_dev(h53);
+    			if (detaching) detach_dev(h62);
     			if (detaching) detach_dev(t12);
-    			if (detaching) detach_dev(h54);
+    			if (detaching) detach_dev(h63);
     			if (detaching) detach_dev(t14);
     			if (detaching) detach_dev(hr1);
     		}
@@ -11436,13 +11436,13 @@ var app = (function () {
     	return block;
     }
 
-    // (93:19) <Button on:click={register} style="float: right; width: 120%">
+    // (93:19) <Button on:click={register} style="float: right; width: 100%">
     function create_default_slot_6$1(ctx) {
     	let t;
 
     	const block = {
     		c: function create() {
-    			t = text("✅ Opt In");
+    			t = text("✅ Opt_In");
     		},
     		m: function mount(target, anchor) {
     			insert_dev(target, t, anchor);
@@ -11456,7 +11456,7 @@ var app = (function () {
     		block,
     		id: create_default_slot_6$1.name,
     		type: "slot",
-    		source: "(93:19) <Button on:click={register} style=\\\"float: right; width: 120%\\\">",
+    		source: "(93:19) <Button on:click={register} style=\\\"float: right; width: 100%\\\">",
     		ctx
     	});
 
@@ -11475,7 +11475,7 @@ var app = (function () {
 
     	button = new Button({
     			props: {
-    				style: "float: right; width: 120%",
+    				style: "float: right; width: 100%",
     				$$slots: { default: [create_default_slot_6$1] },
     				$$scope: { ctx }
     			},
@@ -11544,13 +11544,13 @@ var app = (function () {
     	return block;
     }
 
-    // (98:17) <Button on:click={unregister} style="float: left; width: 120%">
+    // (98:17) <Button on:click={unregister} style="float: left; width: 100%">
     function create_default_slot_4$2(ctx) {
     	let t;
 
     	const block = {
     		c: function create() {
-    			t = text("❎ Opt Out");
+    			t = text("❎ Opt_Out");
     		},
     		m: function mount(target, anchor) {
     			insert_dev(target, t, anchor);
@@ -11564,7 +11564,7 @@ var app = (function () {
     		block,
     		id: create_default_slot_4$2.name,
     		type: "slot",
-    		source: "(98:17) <Button on:click={unregister} style=\\\"float: left; width: 120%\\\">",
+    		source: "(98:17) <Button on:click={unregister} style=\\\"float: left; width: 100%\\\">",
     		ctx
     	});
 
@@ -11583,7 +11583,7 @@ var app = (function () {
 
     	button = new Button({
     			props: {
-    				style: "float: left; width: 120%",
+    				style: "float: left; width: 100%",
     				$$slots: { default: [create_default_slot_4$2] },
     				$$scope: { ctx }
     			},

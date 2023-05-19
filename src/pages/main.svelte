@@ -90,12 +90,12 @@
         <Row>
         <Column>
             <br>
-             <span><Button on:click={register} style="float: right;">Register</Button></span>
+             <span><Button on:click={register} style="float: right; width: 47%">Register</Button></span>
              <br>
         </Column>
       <Column>
           <br>
-           <span><Button on:click={unregister} style="float: left;">Un-Register</Button></span>
+           <span><Button on:click={unregister} style="float: left; width: 47%">Un-Register</Button></span>
            <br>
       </Column>
   </Row>

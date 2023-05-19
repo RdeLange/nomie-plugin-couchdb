@@ -20,7 +20,7 @@
   import Sun from "carbon-icons-svelte/lib/Sun.svelte";
   import Information from "carbon-icons-svelte/lib/Information.svelte";
 
-  const pluginname = "Plugin Sync";
+  const pluginname = "Nomie Sync";
   const pluginemoji = "🔄";
   var emailaddress = "";
   

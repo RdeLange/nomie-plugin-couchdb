@@ -29,10 +29,10 @@
         emoji: pluginemoji,
         description: "Nomie Sync Service",
         uses: [],
-        version: "1.0",
+        version: "1.1",
         addToCaptureMenu: true,
         addToMoreMenu: true,
-        addToWidgets: true,
+        addToWidgets: false,
       }); 
   let inNomie = false;
   let theme = "g10";

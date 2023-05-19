@@ -11148,7 +11148,7 @@ var app = (function () {
     			hr0 = element("hr");
     			t6 = space();
     			h51 = element("h5");
-    			h51.textContent = "This Plugin will let you Register for the free CouchDB Sync Service from DailyNomie. It's usage is very simple: provide your email address and click on the Register button. You will receive your credentials in your email.";
+    			h51.textContent = "This Plugin will let you Register for the free DailyNomie Sync Service which let's you sync your Nomie data to multiple devices. It's usage is very simple: provide your email address and click on the Register button. You will receive your credentials in your email.";
     			t8 = space();
     			h52 = element("h5");
     			h52.textContent = "In case you would like to Un-Register, please use the Un-Register button.";
@@ -11157,26 +11157,26 @@ var app = (function () {
     			h53.textContent = "In case you forgot your credentials, please first Un-Register. Then Register again.";
     			t12 = space();
     			h54 = element("h5");
-    			h54.textContent = "I am providing this service on best effort because I would like many people to be able to enjoy Nomie. Be patience with me in case of errors or bugs🥴";
+    			h54.textContent = "I am providing this service on best effort because I would like many people to be able to enjoy Nomie. After 30 days of inactivity I will delete your account. Be patience with me in case of errors or bugs🥴";
     			t14 = space();
     			hr1 = element("hr");
     			set_style(h1, "text-align", "center");
-    			add_location(h1, file$6, 71, 10, 1511);
+    			add_location(h1, file$6, 71, 10, 1521);
     			set_style(h2, "text-align", "center");
     			attr_dev(h2, "class", "svelte-8ggwz8");
-    			add_location(h2, file$6, 72, 10, 1570);
+    			add_location(h2, file$6, 72, 10, 1580);
     			set_style(h50, "text-align", "center");
-    			add_location(h50, file$6, 73, 10, 1628);
-    			add_location(hr0, file$6, 74, 10, 1692);
+    			add_location(h50, file$6, 73, 10, 1638);
+    			add_location(hr0, file$6, 74, 10, 1702);
     			set_style(h51, "text-align", "center");
-    			add_location(h51, file$6, 75, 10, 1707);
+    			add_location(h51, file$6, 75, 10, 1717);
     			set_style(h52, "text-align", "center");
-    			add_location(h52, file$6, 76, 10, 1974);
+    			add_location(h52, file$6, 76, 10, 2028);
     			set_style(h53, "text-align", "center");
-    			add_location(h53, file$6, 77, 10, 2093);
+    			add_location(h53, file$6, 77, 10, 2147);
     			set_style(h54, "text-align", "center");
-    			add_location(h54, file$6, 78, 10, 2222);
-    			add_location(hr1, file$6, 79, 10, 2418);
+    			add_location(h54, file$6, 78, 10, 2276);
+    			add_location(hr1, file$6, 79, 10, 2528);
     		},
     		m: function mount(target, anchor) {
     			insert_dev(target, h1, anchor);
@@ -11327,9 +11327,9 @@ var app = (function () {
     			create_component(textinput.$$.fragment);
     			t1 = space();
     			br1 = element("br");
-    			add_location(br0, file$6, 84, 10, 2493);
-    			add_location(span, file$6, 85, 10, 2508);
-    			add_location(br1, file$6, 86, 10, 2633);
+    			add_location(br0, file$6, 84, 10, 2603);
+    			add_location(span, file$6, 85, 10, 2618);
+    			add_location(br1, file$6, 86, 10, 2743);
     		},
     		m: function mount(target, anchor) {
     			insert_dev(target, br0, anchor);
@@ -11436,7 +11436,7 @@ var app = (function () {
     	return block;
     }
 
-    // (93:19) <Button on:click={register} style="float: right;">
+    // (93:19) <Button on:click={register} style="float: right; width: 99%">
     function create_default_slot_6$1(ctx) {
     	let t;
 
@@ -11456,7 +11456,7 @@ var app = (function () {
     		block,
     		id: create_default_slot_6$1.name,
     		type: "slot",
-    		source: "(93:19) <Button on:click={register} style=\\\"float: right;\\\">",
+    		source: "(93:19) <Button on:click={register} style=\\\"float: right; width: 99%\\\">",
     		ctx
     	});
 
@@ -11475,7 +11475,7 @@ var app = (function () {
 
     	button = new Button({
     			props: {
-    				style: "float: right;",
+    				style: "float: right; width: 99%",
     				$$slots: { default: [create_default_slot_6$1] },
     				$$scope: { ctx }
     			},
@@ -11492,9 +11492,9 @@ var app = (function () {
     			create_component(button.$$.fragment);
     			t1 = space();
     			br1 = element("br");
-    			add_location(br0, file$6, 91, 12, 2714);
-    			add_location(span, file$6, 92, 13, 2732);
-    			add_location(br1, file$6, 93, 13, 2826);
+    			add_location(br0, file$6, 91, 12, 2824);
+    			add_location(span, file$6, 92, 13, 2842);
+    			add_location(br1, file$6, 93, 13, 2947);
     		},
     		m: function mount(target, anchor) {
     			insert_dev(target, br0, anchor);
@@ -11544,7 +11544,7 @@ var app = (function () {
     	return block;
     }
 
-    // (98:17) <Button on:click={unregister} style="float: left;">
+    // (98:17) <Button on:click={unregister} style="float: left; width: 99%">
     function create_default_slot_4$2(ctx) {
     	let t;
 
@@ -11564,7 +11564,7 @@ var app = (function () {
     		block,
     		id: create_default_slot_4$2.name,
     		type: "slot",
-    		source: "(98:17) <Button on:click={unregister} style=\\\"float: left;\\\">",
+    		source: "(98:17) <Button on:click={unregister} style=\\\"float: left; width: 99%\\\">",
     		ctx
     	});
 
@@ -11583,7 +11583,7 @@ var app = (function () {
 
     	button = new Button({
     			props: {
-    				style: "float: left;",
+    				style: "float: left; width: 99%",
     				$$slots: { default: [create_default_slot_4$2] },
     				$$scope: { ctx }
     			},
@@ -11600,9 +11600,9 @@ var app = (function () {
     			create_component(button.$$.fragment);
     			t1 = space();
     			br1 = element("br");
-    			add_location(br0, file$6, 96, 10, 2874);
-    			add_location(span, file$6, 97, 11, 2890);
-    			add_location(br1, file$6, 98, 11, 2986);
+    			add_location(br0, file$6, 96, 10, 2995);
+    			add_location(span, file$6, 97, 11, 3011);
+    			add_location(br1, file$6, 98, 11, 3118);
     		},
     		m: function mount(target, anchor) {
     			insert_dev(target, br0, anchor);
@@ -11957,7 +11957,7 @@ var app = (function () {
     	let { plugin } = $$props;
     	let { emailaddress } = $$props;
     	var email = emailaddress;
-    	var couchdbserviceurl = "https://nr.casadelange.nl";
+    	var couchdbserviceurl = "https://couchdbadmin.dailynomie.com";
     	let open = true;
     	const dispatch = createEventDispatcher();
 
@@ -12158,17 +12158,14 @@ var app = (function () {
     	let h41;
     	let t15;
     	let h61;
-    	let t16;
     	let t17;
-    	let t18;
-    	let t19;
     	let h62;
-    	let t21;
+    	let t19;
     	let hr2;
     	let br1;
-    	let t22;
+    	let t20;
     	let h42;
-    	let t24;
+    	let t22;
     	let h63;
 
     	const block = {
@@ -12199,19 +12196,17 @@ var app = (function () {
     			h41.textContent = "Licence:";
     			t15 = space();
     			h61 = element("h6");
-    			t16 = text("The ");
-    			t17 = text(/*parent*/ ctx[2]);
-    			t18 = text(" CouchDB Sync Plugin is licenced under the MIT licence");
-    			t19 = space();
+    			h61.textContent = "The Nomie Sync Plugin is licenced under the MIT licence";
+    			t17 = space();
     			h62 = element("h6");
     			h62.textContent = "Copyright Ronald de Lange.\n                Permission is hereby granted, free of charge, to any person obtaining a copy of this software and associated documentation files (the \"Software\"), to deal in the Software without restriction, including without limitation the rights to use, copy, modify, merge, publish, distribute, sublicense, and/or sell copies of the Software, and to permit persons to whom the Software is furnished to do so, subject to the following conditions:\n                The above copyright notice and this permission notice shall be included in all copies or substantial portions of the Software.\n                THE SOFTWARE IS PROVIDED \"AS IS\", WITHOUT WARRANTY OF ANY KIND, EXPRESS OR IMPLIED, INCLUDING BUT NOT LIMITED TO THE WARRANTIES OF MERCHANTABILITY, FITNESS FOR A PARTICULAR PURPOSE AND NONINFRINGEMENT. IN NO EVENT SHALL THE AUTHORS OR COPYRIGHT HOLDERS BE LIABLE FOR ANY CLAIM, DAMAGES OR OTHER LIABILITY, WHETHER IN AN ACTION OF CONTRACT, TORT OR OTHERWISE, ARISING FROM, OUT OF OR IN CONNECTION WITH THE SOFTWARE OR THE USE OR OTHER DEALINGS IN THE SOFTWARE.";
-    			t21 = space();
+    			t19 = space();
     			hr2 = element("hr");
     			br1 = element("br");
-    			t22 = space();
+    			t20 = space();
     			h42 = element("h4");
     			h42.textContent = "Support:";
-    			t24 = space();
+    			t22 = space();
     			h63 = element("h6");
     			h63.textContent = "Please contact me @ ronald_de_lange@hotmail.com";
     			set_style(h1, "text-align", "center");
@@ -12231,12 +12226,12 @@ var app = (function () {
     			attr_dev(h61, "class", "svelte-gjbk59");
     			add_location(h61, file$5, 36, 12, 920);
     			attr_dev(h62, "class", "svelte-gjbk59");
-    			add_location(h62, file$5, 37, 12, 1008);
-    			add_location(hr2, file$5, 42, 12, 2138);
-    			add_location(br1, file$5, 42, 16, 2142);
-    			add_location(h42, file$5, 43, 12, 2159);
+    			add_location(h62, file$5, 37, 12, 997);
+    			add_location(hr2, file$5, 42, 12, 2127);
+    			add_location(br1, file$5, 42, 16, 2131);
+    			add_location(h42, file$5, 43, 12, 2148);
     			attr_dev(h63, "class", "svelte-gjbk59");
-    			add_location(h63, file$5, 44, 12, 2189);
+    			add_location(h63, file$5, 44, 12, 2178);
     		},
     		m: function mount(target, anchor) {
     			insert_dev(target, h1, anchor);
@@ -12262,24 +12257,20 @@ var app = (function () {
     			insert_dev(target, h41, anchor);
     			insert_dev(target, t15, anchor);
     			insert_dev(target, h61, anchor);
-    			append_dev(h61, t16);
-    			append_dev(h61, t17);
-    			append_dev(h61, t18);
-    			insert_dev(target, t19, anchor);
+    			insert_dev(target, t17, anchor);
     			insert_dev(target, h62, anchor);
-    			insert_dev(target, t21, anchor);
+    			insert_dev(target, t19, anchor);
     			insert_dev(target, hr2, anchor);
     			insert_dev(target, br1, anchor);
-    			insert_dev(target, t22, anchor);
+    			insert_dev(target, t20, anchor);
     			insert_dev(target, h42, anchor);
-    			insert_dev(target, t24, anchor);
+    			insert_dev(target, t22, anchor);
     			insert_dev(target, h63, anchor);
     		},
     		p: function update(ctx, dirty) {
     			if (dirty & /*pluginemoji*/ 2) set_data_dev(t0, /*pluginemoji*/ ctx[1]);
     			if (dirty & /*pluginname*/ 1) set_data_dev(t2, /*pluginname*/ ctx[0]);
     			if (dirty & /*parent*/ 4) set_data_dev(t10, /*parent*/ ctx[2]);
-    			if (dirty & /*parent*/ 4) set_data_dev(t17, /*parent*/ ctx[2]);
     		},
     		d: function destroy(detaching) {
     			if (detaching) detach_dev(h1);
@@ -12300,14 +12291,14 @@ var app = (function () {
     			if (detaching) detach_dev(h41);
     			if (detaching) detach_dev(t15);
     			if (detaching) detach_dev(h61);
-    			if (detaching) detach_dev(t19);
+    			if (detaching) detach_dev(t17);
     			if (detaching) detach_dev(h62);
-    			if (detaching) detach_dev(t21);
+    			if (detaching) detach_dev(t19);
     			if (detaching) detach_dev(hr2);
     			if (detaching) detach_dev(br1);
-    			if (detaching) detach_dev(t22);
+    			if (detaching) detach_dev(t20);
     			if (detaching) detach_dev(h42);
-    			if (detaching) detach_dev(t24);
+    			if (detaching) detach_dev(t22);
     			if (detaching) detach_dev(h63);
     		}
     	};
@@ -12434,9 +12425,9 @@ var app = (function () {
     			create_component(button.$$.fragment);
     			t1 = space();
     			br1 = element("br");
-    			add_location(br0, file$5, 49, 12, 2318);
-    			add_location(span, file$5, 50, 13, 2336);
-    			add_location(br1, file$5, 51, 13, 2426);
+    			add_location(br0, file$5, 49, 12, 2307);
+    			add_location(span, file$5, 50, 13, 2325);
+    			add_location(br1, file$5, 51, 13, 2415);
     		},
     		m: function mount(target, anchor) {
     			insert_dev(target, br0, anchor);
@@ -14033,12 +14024,12 @@ var app = (function () {
     			t5 = space();
     			hr = element("hr");
     			set_style(h1, "text-align", "center");
-    			add_location(h1, file, 146, 8, 3652);
+    			add_location(h1, file, 146, 8, 3607);
     			set_style(h2, "text-align", "center");
-    			add_location(h2, file, 147, 8, 3709);
+    			add_location(h2, file, 147, 8, 3664);
     			set_style(h5, "text-align", "center");
-    			add_location(h5, file, 148, 8, 3765);
-    			add_location(hr, file, 149, 8, 3835);
+    			add_location(h5, file, 148, 8, 3720);
+    			add_location(hr, file, 149, 8, 3790);
     		},
     		m: function mount(target, anchor) {
     			insert_dev(target, h1, anchor);
@@ -14279,7 +14270,7 @@ var app = (function () {
     		c: function create() {
     			p = element("p");
     			p.textContent = "Widget Placeholder";
-    			add_location(p, file, 141, 0, 3585);
+    			add_location(p, file, 141, 0, 3540);
     		},
     		m: function mount(target, anchor) {
     			insert_dev(target, p, anchor);
@@ -14772,9 +14763,9 @@ var app = (function () {
     			div = element("div");
     			p = element("p");
     			p.textContent = "Loading....";
-    			add_location(p, file, 153, 0, 3882);
+    			add_location(p, file, 153, 0, 3837);
     			attr_dev(div, "class", "startup");
-    			add_location(div, file, 152, 0, 3860);
+    			add_location(div, file, 152, 0, 3815);
     		},
     		m: function mount(target, anchor) {
     			insert_dev(target, div, anchor);
@@ -14915,8 +14906,8 @@ var app = (function () {
     	return block;
     }
 
-    const pluginname = "Plugin CouchDB";
-    const pluginemoji = "🛋️";
+    const pluginname = "Nomie Sync";
+    const pluginemoji = "🔄";
 
     function instance($$self, $$props, $$invalidate) {
     	let { $$slots: slots = {}, $$scope } = $$props;
@@ -14926,12 +14917,12 @@ var app = (function () {
     	const plugin = new NomiePlugin({
     			name: pluginname,
     			emoji: pluginemoji,
-    			description: "CouchDB Sync Service",
-    			uses: ["createNote", "onLaunch", "getLocation"],
-    			version: "1.0",
+    			description: "Nomie Sync Service",
+    			uses: [],
+    			version: "1.1",
     			addToCaptureMenu: true,
     			addToMoreMenu: true,
-    			addToWidgets: true
+    			addToWidgets: false
     		});
 
     	let inNomie = false;

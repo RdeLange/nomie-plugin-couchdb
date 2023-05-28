@@ -30,7 +30,7 @@
       fetch(couchdbserviceurl+"/register", {
   method: "POST",
   body: JSON.stringify({
-    email: "ronald_de_lange@hotmail.com"
+    'email': email
   }),
   headers: {
     "Content-type": "application/json; charset=UTF-8"
@@ -49,7 +49,7 @@
       fetch(couchdbserviceurl+"/unregister", {
   method: "POST",
   body: JSON.stringify({
-    email: "ronald_de_lange@hotmail.com"
+    'email': email
   }),
   headers: {
     "Content-type": "application/json; charset=UTF-8"

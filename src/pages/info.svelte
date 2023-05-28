@@ -31,7 +31,7 @@
             <h5 style="text-align:center">General Information</h5>
             <hr>
             <h4>General:</h4>
-            <h6>This is a plugin for {parent}. This plugin will enable Nomie to sync accross devices via the DailyNomie CouchDB Instance.</h6>
+            <h6>This is a plugin for {parent}. This plugin will enable Nomie to sync accross devices via the DailyNomie CouchDB/Sync Instance.</h6>
             <hr><br>
             <h4>Licence:</h4>
             <h6>The Nomie Sync Plugin is licenced under the MIT licence</h6>

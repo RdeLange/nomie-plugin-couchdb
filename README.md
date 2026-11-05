@@ -1,14 +1,18 @@
 # 🔄Nomie Sync Plugin
 
-The 🔄Nomie Sync Plugin is a plugin for Nomie6-oss.
+The 🔄Nomie Sync Plugin is a plugin for Nomie 6.8 and for DailyNomie 7. Version 2 works in both: in DailyNomie 7 it takes the app's colours, text size and language, and in Nomie 6.8 it keeps the look of version 1.
 
 ## About the 🔄Nomie Sync Plugin
 
 The Nomie Sync Plugin will enable you to register with the DailyNomie Sync Server. This Sync Server (a hosted CouchDB) will let you sync your Nomie Data between devices.
 
+The plugin talks to the sync service at `https://couchdbadmin.dailynomie.com` (`/register` and `/unregister`). Those calls, and the email address the plugin keeps, are the same as in version 1, so existing accounts keep working.
+
 ## Installing the Plugin
 
-The url of the plugin is:
+In DailyNomie 7, open the Plugin Library and choose **Nomie Sync v2** (or **Nomie Sync** under the Nomie 6.8 plugins).
+
+In Nomie 6.8, the url of the plugin is:
 
 [https://dailynomie.github.io/nomie-plugin-couchdb/](https://dailynomie.github.io/nomie-plugin-couchdb/)
 
@@ -84,3 +88,19 @@ If you did not use the service (sync your data) for more then 30 days, I will de
 Well, I guess there is nothing more to explain.
 
 As always...have fun with it!
+
+## Development
+
+The plugin is built with Vite, Svelte 5 and TypeScript, like the other DailyNomie plugins.
+
+```bash
+npm install     # uses legacy-peer-deps (see .npmrc)
+npm test        # vitest: the sync calls, the look for each app, the translations, the font
+npm run check   # svelte-check and TypeScript
+npm run build   # builds public/, the folder the GitHub Pages workflow uploads
+npm run dev     # Vite dev server (outside Nomie the sync is not available)
+```
+
+The build needs Node 18 or later (Vite 6). The Pages workflow in the `dailynomie` organisation was written for Node 16, and needs its Node version raised before it can build version 2.
+
+The colours are the ones DailyNomie 7 sends (`prefs.colours`), and its values are copied in `src/app/prefs.ts`. A Nomie 6.8 app sends no colours, so the plugin uses the Carbon themes version 1 used. The text is in English, Italian, German and Dutch, the languages DailyNomie 7 ships.

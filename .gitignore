@@ -1,1 +1,4 @@
 node_modules
+# built by npm run build, uploaded by the Pages workflow
+public/
+dist/

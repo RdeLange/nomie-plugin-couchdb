@@ -1,0 +1,144 @@
+// The plugin's text in the languages DailyNomie 7 ships (English, Italian, German, Dutch). English is the reference:
+// every language has the same keys (i18n.spec.ts checks this). The licence stays in English in every language.
+import type { Lang } from './prefs';
+
+export const EN = {
+  title: 'Nomie Sync',
+  subtitle: 'Sync your Nomie data between devices.',
+  tabSync: 'Sync',
+  tabAbout: 'About',
+  account: 'Your account',
+  emailLabel: 'Email address',
+  emailPlaceholder: 'you@example.com',
+  optIn: 'Opt in',
+  optOut: 'Opt out',
+  optOutTitle: 'Opt out of sync?',
+  optOutMessage: 'Your sync subscription will be cancelled. Use the email address you signed up with.',
+  enterEmail: 'Enter your email address first.',
+  busy: 'Working…',
+  unreachable: 'The sync service could not be reached. Try again later.',
+  alertTitle: 'Sync',
+  howItWorks: 'How it works',
+  howOne: 'This plugin registers you for the free DailyNomie Sync Service. It syncs your Nomie data to all your devices.',
+  howTwo: 'Enter your email address and tap Opt in. Your credentials are sent to that address.',
+  howThree: 'Opt out to cancel your subscription.',
+  howFour: 'If you forgot your credentials, opt out first, then opt in again.',
+  bestEffort:
+    'The service is provided on a best effort basis. After 30 days without syncing, your subscription is deleted, and you can always opt in again.',
+  offline: 'Sync works in Nomie. Open this plugin in Nomie to opt in or out.',
+  theme: 'Theme',
+  general: 'General',
+  generalText:
+    'This plugin lets Nomie sync across devices through the DailyNomie Sync Service, a hosted CouchDB. The sync connection itself is set up in Nomie, under your data storage.',
+  licence: 'Licence',
+  licenceText:
+    'The Nomie Sync Plugin is licenced under the MIT licence. Copyright Ronald de Lange. Permission is hereby granted, free of charge, to any person obtaining a copy of this software and associated documentation files (the "Software"), to deal in the Software without restriction, including without limitation the rights to use, copy, modify, merge, publish, distribute, sublicense, and/or sell copies of the Software, and to permit persons to whom the Software is furnished to do so, subject to the following conditions: The above copyright notice and this permission notice shall be included in all copies or substantial portions of the Software. THE SOFTWARE IS PROVIDED "AS IS", WITHOUT WARRANTY OF ANY KIND, EXPRESS OR IMPLIED, INCLUDING BUT NOT LIMITED TO THE WARRANTIES OF MERCHANTABILITY, FITNESS FOR A PARTICULAR PURPOSE AND NONINFRINGEMENT. IN NO EVENT SHALL THE AUTHORS OR COPYRIGHT HOLDERS BE LIABLE FOR ANY CLAIM, DAMAGES OR OTHER LIABILITY, WHETHER IN AN ACTION OF CONTRACT, TORT OR OTHERWISE, ARISING FROM, OUT OF OR IN CONNECTION WITH THE SOFTWARE OR THE USE OR OTHER DEALINGS IN THE SOFTWARE.',
+  support: 'Support',
+  supportText: 'Contact Ronald de Lange at ronald_de_lange@hotmail.com',
+};
+
+export type Messages = typeof EN;
+
+const IT: Messages = {
+  title: 'Nomie Sync',
+  subtitle: 'Sincronizza i tuoi dati Nomie tra i dispositivi.',
+  tabSync: 'Sincronizza',
+  tabAbout: 'Info',
+  account: 'Il tuo account',
+  emailLabel: 'Indirizzo email',
+  emailPlaceholder: 'tu@esempio.it',
+  optIn: 'Iscriviti',
+  optOut: 'Annulla iscrizione',
+  optOutTitle: 'Annullare la sincronizzazione?',
+  optOutMessage: "L'abbonamento alla sincronizzazione sarà annullato. Usa l'indirizzo email con cui ti sei iscritto.",
+  enterEmail: 'Inserisci prima il tuo indirizzo email.',
+  busy: 'In corso…',
+  unreachable: 'Il servizio di sincronizzazione non è raggiungibile. Riprova più tardi.',
+  alertTitle: 'Sincronizzazione',
+  howItWorks: 'Come funziona',
+  howOne: 'Questo plugin ti iscrive al servizio gratuito di sincronizzazione DailyNomie. Sincronizza i tuoi dati Nomie su tutti i tuoi dispositivi.',
+  howTwo: "Inserisci il tuo indirizzo email e tocca Iscriviti. Le credenziali vengono inviate a quell'indirizzo.",
+  howThree: 'Annulla l\'iscrizione per cancellare il tuo abbonamento.',
+  howFour: "Se hai dimenticato le credenziali, annulla prima l'iscrizione, poi iscriviti di nuovo.",
+  bestEffort:
+    "Il servizio è offerto con la migliore disponibilità possibile. Dopo 30 giorni senza sincronizzazione, l'abbonamento viene eliminato, e puoi sempre iscriverti di nuovo.",
+  offline: 'La sincronizzazione funziona in Nomie. Apri questo plugin in Nomie per iscriverti o annullare.',
+  theme: 'Tema',
+  general: 'Generale',
+  generalText:
+    "Questo plugin permette a Nomie di sincronizzarsi tra i dispositivi tramite il servizio DailyNomie, un CouchDB ospitato. La connessione di sincronizzazione si imposta in Nomie, nell'archiviazione dei dati.",
+  licence: 'Licenza',
+  licenceText: EN.licenceText,
+  support: 'Supporto',
+  supportText: 'Contatta Ronald de Lange a ronald_de_lange@hotmail.com',
+};
+
+const DE: Messages = {
+  title: 'Nomie Sync',
+  subtitle: 'Synchronisiere deine Nomie-Daten zwischen Geräten.',
+  tabSync: 'Sync',
+  tabAbout: 'Info',
+  account: 'Dein Konto',
+  emailLabel: 'E-Mail-Adresse',
+  emailPlaceholder: 'du@beispiel.de',
+  optIn: 'Anmelden',
+  optOut: 'Abmelden',
+  optOutTitle: 'Von der Synchronisation abmelden?',
+  optOutMessage: 'Dein Synchronisations-Abo wird gekündigt. Verwende die E-Mail-Adresse, mit der du dich angemeldet hast.',
+  enterEmail: 'Gib zuerst deine E-Mail-Adresse ein.',
+  busy: 'Bitte warten…',
+  unreachable: 'Der Sync-Dienst ist nicht erreichbar. Versuche es später noch einmal.',
+  alertTitle: 'Sync',
+  howItWorks: "So funktioniert's",
+  howOne: 'Dieses Plugin meldet dich für den kostenlosen DailyNomie Sync-Dienst an. Er synchronisiert deine Nomie-Daten auf alle deine Geräte.',
+  howTwo: 'Gib deine E-Mail-Adresse ein und tippe auf Anmelden. Deine Zugangsdaten werden an diese Adresse geschickt.',
+  howThree: 'Melde dich ab, um dein Abo zu kündigen.',
+  howFour: 'Wenn du deine Zugangsdaten vergessen hast, melde dich zuerst ab und dann wieder an.',
+  bestEffort:
+    'Der Dienst wird nach bestem Bemühen angeboten. Nach 30 Tagen ohne Synchronisation wird dein Abo gelöscht; du kannst dich jederzeit wieder anmelden.',
+  offline: 'Die Synchronisation funktioniert in Nomie. Öffne dieses Plugin in Nomie, um dich an- oder abzumelden.',
+  theme: 'Design',
+  general: 'Allgemein',
+  generalText:
+    'Dieses Plugin lässt Nomie über den DailyNomie Sync-Dienst zwischen Geräten synchronisieren, einer gehosteten CouchDB. Die Sync-Verbindung richtest du in Nomie unter deiner Datenspeicherung ein.',
+  licence: 'Lizenz',
+  licenceText: EN.licenceText,
+  support: 'Support',
+  supportText: 'Kontakt: Ronald de Lange, ronald_de_lange@hotmail.com',
+};
+
+const NL: Messages = {
+  title: 'Nomie Sync',
+  subtitle: 'Synchroniseer je Nomie-gegevens tussen apparaten.',
+  tabSync: 'Sync',
+  tabAbout: 'Over',
+  account: 'Jouw account',
+  emailLabel: 'E-mailadres',
+  emailPlaceholder: 'jij@voorbeeld.nl',
+  optIn: 'Aanmelden',
+  optOut: 'Afmelden',
+  optOutTitle: 'Afmelden voor sync?',
+  optOutMessage: 'Je syncabonnement wordt opgezegd. Gebruik het e-mailadres waarmee je je hebt aangemeld.',
+  enterEmail: 'Vul eerst je e-mailadres in.',
+  busy: 'Bezig…',
+  unreachable: 'De syncdienst is niet bereikbaar. Probeer het later opnieuw.',
+  alertTitle: 'Sync',
+  howItWorks: 'Zo werkt het',
+  howOne: 'Deze plugin meldt je aan voor de gratis DailyNomie Sync-dienst. Die synchroniseert je Nomie-gegevens naar al je apparaten.',
+  howTwo: 'Vul je e-mailadres in en tik op Aanmelden. Je inloggegevens worden naar dat adres gestuurd.',
+  howThree: 'Meld je af om je abonnement op te zeggen.',
+  howFour: 'Ben je je inloggegevens kwijt, meld je dan eerst af en daarna weer aan.',
+  bestEffort:
+    'De dienst wordt naar beste vermogen aangeboden. Na 30 dagen zonder synchronisatie wordt je abonnement verwijderd, en je kunt je altijd weer aanmelden.',
+  offline: 'Synchronisatie werkt in Nomie. Open deze plugin in Nomie om je aan te melden of af te melden.',
+  theme: 'Thema',
+  general: 'Algemeen',
+  generalText:
+    'Deze plugin laat Nomie synchroniseren tussen apparaten via de DailyNomie Sync-dienst, een gehoste CouchDB. De synchronisatieverbinding stel je in Nomie in, bij je gegevensopslag.',
+  licence: 'Licentie',
+  licenceText: EN.licenceText,
+  support: 'Ondersteuning',
+  supportText: 'Neem contact op met Ronald de Lange via ronald_de_lange@hotmail.com',
+};
+
+export const MESSAGES: Record<Lang, Messages> = { en: EN, it: IT, de: DE, nl: NL };

@@ -1,0 +1,37 @@
+/* The look of the plugin: DailyNomie 7's font and iOS type sizes. The colours are set by App.svelte from the app's
+   preferences (src/app/prefs.ts). Every font size is multiplied by --text-scale, the text size the app sends. */
+:root {
+  /* --ios-font in DailyNomie 7's src/style/main.css: the system font, so no web font is loaded */
+  --font: -apple-system, BlinkMacSystemFont, 'SF Pro Text', system-ui, sans-serif;
+  /* the colours until the app sends its own (the light palette of DailyNomie 7) */
+  --page: #f2f2f7;
+  --card: #ffffff;
+  --card-inner: #f2f2f7;
+  --text: #000000;
+  --text-2: #636368;
+  --separator: #d8d8dc;
+  --fill: #e5e5ea;
+  --tint: #0a6cc9;
+  --on-tint: #ffffff;
+  --tint-soft: #ebf4fd;
+  --good: #1e7a34;
+  --good-soft: #ddf3e2;
+  --danger: #d70015;
+  --on-danger: #ffffff;
+  --switch-on: #34c759;
+  --switch-off: #e3e3e8;
+  --text-scale: 1;
+}
+
+* {
+  box-sizing: border-box;
+}
+
+html,
+body {
+  margin: 0;
+  background: var(--page);
+  color: var(--text);
+  font-family: var(--font);
+  -webkit-font-smoothing: antialiased;
+}

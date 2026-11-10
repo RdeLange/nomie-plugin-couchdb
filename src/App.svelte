@@ -108,6 +108,7 @@
 </script>
 
 <main class="page" data-generation={look.generation} data-mode={look.mode}>
+  <header class="top">
   <div class="action-row">
     {#if look.generation === 'nomie6'}
       <button
@@ -134,6 +135,7 @@
       {t('tabAbout')}
     </button>
   </div>
+  </header>
 
   {#if notice}
     <p class="notice" role="status">{notice}</p>
@@ -185,10 +187,23 @@
     min-height: 100vh;
     max-width: 640px;
     margin: 0 auto;
-    padding: calc(env(safe-area-inset-top) + 8px) 16px calc(env(safe-area-inset-bottom) + 24px);
+    padding: 0 16px calc(env(safe-area-inset-bottom) + 24px);
     background: var(--page);
     color: var(--text);
     font-family: var(--font);
+  }
+
+  /* the header is a Liquid Glass bar (D-glass) on Daily Nomie 7; on Nomie 6.8 it is the flat page colour */
+  .top {
+    position: sticky;
+    top: 0;
+    z-index: 2;
+    margin: 0 -16px;
+    padding: calc(env(safe-area-inset-top) + 8px) 16px 10px;
+    background: var(--glass-fill);
+    -webkit-backdrop-filter: var(--glass-blur);
+    backdrop-filter: var(--glass-blur);
+    border-bottom: 1px solid var(--glass-edge);
   }
 
   .action-row {
@@ -354,7 +369,7 @@
     padding: 12px 16px;
     border-radius: 12px;
     background: var(--tint-soft);
-    color: var(--tint);
+    color: var(--tint-text);
     font-size: calc(15px * var(--text-scale));
     line-height: 1.33;
   }

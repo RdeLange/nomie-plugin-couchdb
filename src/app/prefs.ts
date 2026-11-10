@@ -4,7 +4,7 @@
 // prefs.fontScale and the language. Nomie 6.8 sends only the theme and the language. On 6.8 the plugin keeps the look
 // it had in version 1: the Carbon themes (white, g10, g80, g90, g100), with a theme button in the header.
 export type Mode = 'light' | 'dark';
-export type Lang = 'en' | 'it' | 'de' | 'nl';
+export type Lang = 'en' | 'es' | 'it' | 'de' | 'nl';
 export type LegacyTheme = 'white' | 'g10' | 'g80' | 'g90' | 'g100';
 export type Generation = 'dailynomie7' | 'nomie6';
 
@@ -210,6 +210,7 @@ export const modeFrom = (prefs: unknown, systemDark = false): Mode => {
 // The app's language. Anything the plugin does not translate is English.
 export const langFrom = (value: unknown): Lang => {
   const code = typeof value === 'string' ? value.toLowerCase() : '';
+  if (code.startsWith('es')) return 'es';
   if (code.startsWith('it')) return 'it';
   if (code.startsWith('de')) return 'de';
   if (code.startsWith('nl')) return 'nl';
@@ -246,9 +247,29 @@ export const lookFrom = (prefs: unknown, legacy: LegacyTheme | null, systemDark 
   return { generation: 'nomie6', mode, lang, fontScale: 1, palette: LEGACY_PALETTE[theme], legacyTheme: theme };
 };
 
+// Liquid Glass (D-glass) for Daily Nomie 7: the same values as the app's --glass-liquid-* and --glass-blur tokens.
+// Nomie 6.8 keeps its flat header (the page colour, no blur, no edge).
+const GLASS: Record<Mode, { fill: string; edge: string }> = {
+  light: { fill: 'rgba(255,255,255,0.5)', edge: 'rgba(255,255,255,0.7)' },
+  dark: { fill: 'rgba(40,40,44,0.45)', edge: 'rgba(255,255,255,0.22)' },
+};
+const GLASS_BLUR = 'blur(16px) saturate(180%)';
+
 // The CSS variables of a look, for the plugin's root element
 export const cssVariables = (look: Look): Record<string, string> => {
   const variables: Record<string, string> = { '--text-scale': String(look.fontScale) };
   for (const role of ROLES) variables[VARIABLE[role]] = look.palette[role];
+  if (look.generation === 'dailynomie7') {
+    variables['--glass-fill'] = GLASS[look.mode].fill;
+    variables['--glass-edge'] = GLASS[look.mode].edge;
+    variables['--glass-blur'] = GLASS_BLUR;
+    // tint as text: a darker blue in light mode, so it reads on the grey fill (4.5:1)
+    variables['--tint-text'] = look.mode === 'dark' ? '#4DB3FF' : '#0764B8';
+  } else {
+    variables['--glass-fill'] = look.palette.page;
+    variables['--glass-edge'] = 'transparent';
+    variables['--glass-blur'] = 'none';
+    variables['--tint-text'] = look.palette.tint;
+  }
   return variables;
 };

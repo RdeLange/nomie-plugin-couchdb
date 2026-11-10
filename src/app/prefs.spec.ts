@@ -105,13 +105,15 @@ describe('the palettes', () => {
 
   it('writes one CSS variable per role', () => {
     const variables = cssVariables(lookFrom(dailyNomie7Prefs('light'), null));
-    expect(Object.keys(variables)).toHaveLength(ROLES.length + 1);
+    // one per role, the text size, and the four glass and tint-text values
+    expect(Object.keys(variables)).toHaveLength(ROLES.length + 1 + 4);
     expect(variables['--tint']).toBe(DAILYNOMIE_PALETTE.light.tint);
   });
 });
 
 describe('the language', () => {
   it('uses the language the app sends, and English for one the plugin does not translate', () => {
+    expect(langFrom('es-es')).toBe('es');
     expect(langFrom('it')).toBe('it');
     expect(langFrom('de')).toBe('de');
     expect(langFrom('nl')).toBe('nl');
